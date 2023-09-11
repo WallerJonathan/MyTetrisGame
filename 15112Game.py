@@ -289,14 +289,14 @@ class block:
                 if coord[0] == 0:
                     print(coord, 1)
                     return True
-                elif gameGrid[coord[1]][coord[0]-1].fill != "grey":
+                elif gameGrid[coord[1]][coord[0]-1].fill != "grey" and coord[1] != -1:
                     print(coord, 3)
                     return True
             elif key == "right":
                 if coord[0] == 9:
                     print(coord, 2)
                     return True
-                elif gameGrid[coord[1]][coord[0]+1].fill != "grey":
+                elif gameGrid[coord[1]][coord[0]+1].fill != "grey" and coord[1] != -1:
                     print(coord, 4)
                     return True
             else:
