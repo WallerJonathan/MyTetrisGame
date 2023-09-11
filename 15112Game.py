@@ -1,3 +1,4 @@
+# This uses the cmu_graphics library. For information, click the link below.
 # Documentation: https://academy.cs.cmu.edu/docs
 # Class syllabus: https://www.cs.cmu.edu/~112/syllabus.html
 # Tetris pieces png: https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5ca4b334-84bc-4c1d-abe6-c55b171c3fc5_689x362.png
@@ -32,7 +33,7 @@ class gameBoard:
     lineCounter = 0 # Keeps track of the total lines cleared
     projectAuthor = None # The display for my name (Hooray!!!)
     directions = None # The game directions
-    dropSpeed = [100, 85, 70, 60, 50, 40, 30, 20, 10, 7] # Contains the numbers that the stepCounter is modulated by
+    dropSpeed = [85, 75, 65, 50, 40, 30, 20, 13, 7, 5] # Contains the numbers that the stepCounter is modulated by
     bag = ["I", "T", "O", "Z", "S", "L", "J", "I", "T", "O", "Z", "S", "L", "J"] # The "bag" of tiles that can be drawn from
 
     def __init__(self):
